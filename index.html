@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-pragreen relative w-full h-screen">
+      <nav class="flex w-full items-center px-4 py-4 justify-between h-10">
+        <h1 class="text-white font-protest text-2xl">Toko baju</h1>
+        <div class="flex items-center gap-2">
+            <div>
+            <div
+              id="toggle-button"
+              class="flex items-center cursor-pointer justify-center rounded-xl h-8 text-white bg-brown p-2 gap-1 hover:bg-cokolate transition-all duration-300"
+            >
+              <p>category</p>
+              <img
+                src="./images/arrow-down.png"
+                class="w-4 text-white filter invert h-4"
+                alt=""
+              />
+            </div>
+
+            <ul id="parent-category" class="z-10 hidden absolute w-24 rounded-xl text-white bg-brown cursor-pointer">
+                <li class="text-center p-1 hover:bg-cokolate transition-all duration-300">electronics</li>
+                <li class="text-center p-1 hover:bg-cokolate transition-all duration-300">jewelery</li>
+                <li class="text-center p-1 hover:bg-cokolate transition-all duration-300">mens </li>
+                <li class="text-center p-1 hover:bg-cokolate transition-all duration-300">womens </li>
+              </ul>
+
+             
+
+            </div>
+            <img
+              src="./images/icons-bag.png"
+              class="w-5 h-5 text-white invert filter rounded-full hover:text-brown duration-300 transition-all"
+              alt=""
+            />
+          </div>
+        </nav>
+        <div class="grid grid-cols-1 px-5 py-5">
+          <div
+            class="w-[300px] rounded-t-2xl h-[300px] bg-brown relative mx-auto mt-10"
+          >
+            <img
+              src="./images/Rectangle.png"
+              class="w-full max-h-[200px] rounded-t-2xl"
+              alt=""
+            />
+            <div class="flex flex-col justify-center items-center">
+              <p class="text-white">Judul</p>
+              <p class="text-white">harga : 1000</p>
+              <button class="bg-white py-1 px-2 mt-1 rounded-xl">
+                tambah keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
